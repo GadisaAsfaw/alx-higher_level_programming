@@ -95,4 +95,3 @@ class Square:
                 my_str += '#' * self.__size
                 my_str += '\n'
             return my_str[:-1]
-
