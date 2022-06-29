@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 class Rectangle:
-    '''Empyt class '''
+    """ Empyt class """
     pass
