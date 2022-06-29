@@ -10,6 +10,12 @@ class Rectangle:
      and getter and setter
 """
     def __init__(self, width=0, height=0):
+        """ initializes a class
+        Args:
+         width
+         height
+
+        """
         self.__width = width
         self.__height = height
 
