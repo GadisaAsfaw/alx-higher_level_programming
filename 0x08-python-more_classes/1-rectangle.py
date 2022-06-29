@@ -8,7 +8,7 @@ class Rectangle:
     """ Rectangle class with
      attribute width and height,
      and getter and setter
-"""
+    """
     def __init__(self, width=0, height=0):
         """ initializes a class
         Args:
@@ -26,7 +26,10 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """Sets new width value"""
+        """Sets new width value
+        args:
+            value: new width
+        """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -40,7 +43,10 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """ Sets new height value """
+        """ Sets new height value
+        Args:
+            value: new height
+        """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
