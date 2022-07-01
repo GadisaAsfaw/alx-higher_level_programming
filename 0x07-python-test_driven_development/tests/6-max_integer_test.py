@@ -12,31 +12,31 @@ class TestMaxInteger(unittest.TestCase):
     def test_regular(self):
         """Test with a regular list of ints: should return the max result"""
         lst = [1, 2, 3, 4, 5]
-        result = max_integer(l)
+        result = max_integer(lst)
         self.assertEqual(result, 5)
 
     def test_not_int(self):
         """Test with a list of non-ints and ints:
         should raise a TypeError exception"""
         lst = ["a", "b", 9]
-        self.assertRaises(TypeError, max_integer, l)
+        self.assertRaises(TypeError, max_integer, lst)
 
     def test_empty(self):
         """Test with an empty list: should return None"""
         lst = []
-        result = max_integer(l)
+        result = max_integer(lst)
         self.assertEqual(result, None)
 
     def test_negative(self):
         """Test with a list of negative values: should return the max"""
         lst = [-2, -6, -1]
-        result = max_integer(l)
+        result = max_integer(lst)
         self.assertEqual(result, -1)
 
     def test_float(self):
         """Test with a list of mixed ints and floats: should return the max"""
         lst = [3, 4.5, 2]
-        result = max_integer(l)
+        result = max_integer(lst)
         self.assertEqual(result, 4.5)
 
     def test_not_list(self):
@@ -46,19 +46,19 @@ class TestMaxInteger(unittest.TestCase):
     def test_unique(self):
         """Test with a list of one int: should return the value of this int"""
         lst = [45]
-        result = max_integer(l)
+        result = max_integer(lst)
         self.assertEqual(result, 45)
 
     def test_identical(self):
         """Test with a list of identical values: should return the value"""
         lst = [8, 8, 8, 8, 8]
-        result = max_integer(l)
+        result = max_integer(lst)
         self.assertEqual(result, 8)
 
     def test_strings(self):
         """Test with a list of strings: should return the first string"""
         lst = ["hi", "hello"]
-        result = max_integer(l)
+        result = max_integer(lst)
         self.assertEqual(result, "hi")
 
     def test_none(self):
